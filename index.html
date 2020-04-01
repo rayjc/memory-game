@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Memory Game</h1>
+    <div class="setup">
+      <button id="new-game">New Game (
+        <span id="deck-size">6</span> cards)</button>
+      <span id="setup-slider">
+        <label for="difficulty">Difficulty: </label>
+        <input type="range" name="slider" id="difficulty" min="6" max="100" step="2">
+      </span>
+      <span id="setup-restart"></span>
+    </div>
+    <div class="score">
+      <h2><span id="current-score">0</span></h2>
+      <h2>Best Score: <span id="best-score">Not Ready Yet!</span></h2>
+    </div>
+
+    <div id="game">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
